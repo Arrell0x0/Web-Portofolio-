@@ -1,0 +1,146 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+body {
+  background: #fdfaf6;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+
+  margin: 10px 20px;
+  padding: 18px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 16px;
+
+  background: linear-gradient(
+    90deg,
+    #e4a95d,
+    #f5cb8d
+  );
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo h1 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.container-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.container-nav a {
+  text-decoration: none;
+  color: brown;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.container-nav a:hover {
+  background: brown;
+  color: white;
+}
+
+/* SECTIONS */
+section {
+  min-height: 100vh;
+  padding: 120px 60px;
+}
+
+.home {
+  background: #fff8ef;
+}
+
+.home h1,
+.product h1,
+.about h1,
+.contact h1 {
+  font-size: 3rem;
+  color: #8b4513;
+  margin-bottom: 20px;
+}
+
+.home p,
+.product p,
+.about p,
+.contact p {
+  max-width: 700px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* PRODUCT */
+.product {
+  background: white;
+}
+
+/* ABOUT */
+.about {
+  background: #fff8ef;
+}
+
+/* CONTACT */
+.contact {
+  background: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .container-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    padding: 100px 25px;
+    text-align: center;
+  }
+
+  .home h1,
+  .product h1,
+  .about h1,
+  .contact h1 {
+    font-size: 2rem;
+  }
+}
