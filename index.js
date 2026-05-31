@@ -11,7 +11,19 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
+sections.forEach((section) => {
+  observer.observe(section);
+});
 
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
 
 const cards = document.querySelectorAll(".product-card");
 
