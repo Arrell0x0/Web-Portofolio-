@@ -1,16 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>product</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar hidden">
       <div class="logo">
-        <h1>Darrell Christiannov</h1>
-        <img src="https://i.pinimg.com/originals/01/c7/51/01c751482ef7c4f5e93f3539efd27f6f.jpg" alt="Gambar">
+        <h1>My Portofolio</h1>
+        <img
+          src="https://i.pinimg.com/originals/01/c7/51/01c751482ef7c4f5e93f3539efd27f6f.jpg"
+          alt="Gambar"
+        />
       </div>
 
       <div class="container-nav">
@@ -21,12 +24,37 @@
       </div>
     </nav>
 
-    <section id="Product" class="product">
-      <h1>My Projects</h1>
-      <p>Here are some projects I have worked on and continue to develop.</p>
-    </section>
-    
+  
+   
+    <section id="Product " class="product hidden">
+ 
+        <h1>My Projects</h1>
+        <p>Some of my work and creations.</p>
 
-  <script src="index.js"></script>
-</body>
+  <div class="product-grid hidden">
+    <div class="product-card hidden">
+      <img src="/images/project1.png" alt="Project 1">
+    </div>
+
+    <div class="product-card hidden">
+      <img src="/images/project2.png" alt="Project 2">
+    </div>
+
+    <div class="product-card hidden">
+      <img src="/images/project3.png" alt="Project 3">
+    </div>
+
+    <div class="product-card hidden">
+      <img src="/images/project4.png" alt="Project 4">
+    </div>
+  </div>
+</section>
+
+    <footer class="footer hidden">
+      <h3>Darrell Christiannov</h3>
+      <p>© 2026 All Rights Reserved</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>
